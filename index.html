@@ -22,7 +22,7 @@
                         </li>
                     </ul>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Inserisci una nuova task" v-model="newTaskText">
+                        <input type="text" class="form-control" placeholder="Inserisci una nuova task" v-model="newTaskText" @keyup.enter="addNewTask(newTaskText)">
                         <button class="btn btn-primary" @click="addNewTask(newTaskText)">Add Task</button>
                     </div>
                 </div>
