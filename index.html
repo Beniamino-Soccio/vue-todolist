@@ -18,7 +18,7 @@
                     <ul class="list-group">
                         <li class="d-flex list-group-item justify-content-between align-content-center" v-for="(todoItem, index) in todoList">
                             <p :class="(todoItem.done === true) ? 'text-decoration-line-through' : '' "> {{todoItem.text}} </p>
-                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-x text-danger display-6" @click="removeTask(index)"></i>
                         </li>
                     </ul>
                 </div>
