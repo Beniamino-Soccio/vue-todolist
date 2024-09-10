@@ -64,6 +64,10 @@ createApp({
             { text: content, done: false, }
           );
           this.newTaskText = '';
+        },
+        switchDone(index) {
+          this.todoList[index].done = !this.todoList[index].done; 
+          
         }
     }
     
